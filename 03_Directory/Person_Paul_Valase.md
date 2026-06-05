@@ -1,0 +1,5 @@
+---
+type: ctf_leader
+tags: [uvt, cyber, web_exploitation]
+---
+### 👤 Paul Valase * **Institutional Role:** Technical Systems Infrastructure Manager & UVT-CTF Operations Team Leader. * **Domain Mapping:** [[Cloud_Container_Security]], [[DevSecOps_Supply_Chain_Security]], [[Malware_Analysis]]. * **Core Academic Focus:** Secure Systems Virtualization, Containerized Network Orchestration, Automated Deployment Pipelines, and Cyber Range Asset Management. * **Verified Contributions:** Paul Valase functions as the operational core of the **UVT-CTF** competitive platform. He handles the technical architecture, cluster deployment, and resource isolation needed to run safe, hands-on security training simulations. He is highly specialized in building automated deployment systems and immutable container infrastructure, ensuring that student teams can safely analyze malware samples, configure firewall scripts, and participate in global cybersecurity competitions within fully monitored, sandbox environments.

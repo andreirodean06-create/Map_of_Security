@@ -1,0 +1,592 @@
+
+:root {
+  --cyber-bg: #06080d;
+  --cyber-bg-2: #0b1020;
+  --cyber-panel: rgba(11, 16, 32, 0.94);
+  --cyber-panel-2: rgba(16, 24, 42, 0.96);
+  --cyber-ink: #e9fff4;
+  --cyber-muted: #9bb8ad;
+  --cyber-green: #39ff88;
+  --cyber-cyan: #3ee7ff;
+  --cyber-blue: #6aa8ff;
+  --cyber-pink: #ff4fb8;
+  --cyber-yellow: #ffd166;
+  --cyber-orange: #ff9b4a;
+  --cyber-red: #ff365f;
+  --cyber-line: #28415b;
+  --cyber-black: #020409;
+  --cyber-shadow: rgba(57, 255, 136, 0.24);
+}
+
+body,
+.app-container,
+.workspace,
+.workspace-split,
+.workspace-leaf,
+.workspace-leaf-content,
+.workspace-leaf-content[data-type="markdown"],
+.workspace-leaf-content[data-type="markdown"] .view-content,
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view,
+.workspace-leaf-content[data-type="markdown"] .markdown-preview-view,
+.markdown-reading-view,
+.markdown-preview-view {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025) 50%, rgba(0, 0, 0, 0.09) 50%),
+    linear-gradient(90deg, rgba(62, 231, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(rgba(57, 255, 136, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 14% 14%, rgba(62, 231, 255, 0.16), transparent 28%),
+    radial-gradient(circle at 84% 16%, rgba(255, 79, 184, 0.13), transparent 26%),
+    radial-gradient(circle at 50% 100%, rgba(57, 255, 136, 0.12), transparent 38%),
+    linear-gradient(180deg, var(--cyber-bg-2) 0%, var(--cyber-bg) 58%, #03050a 100%) !important;
+  background-size: 100% 4px, 32px 32px, 32px 32px, auto, auto, auto, auto !important;
+  background-attachment: fixed !important;
+  color: var(--cyber-ink) !important;
+}
+
+.workspace-tab-container,
+.view-content,
+.markdown-preview-view .markdown-preview-sizer {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.markdown-preview-view,
+.markdown-source-view {
+  color: var(--cyber-ink) !important;
+  font-family: "Courier New", Consolas, monospace;
+}
+
+.markdown-preview-section {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.markdown-preview-section::before {
+  content: "SECURITY MAP // PLAYER 1";
+  display: block;
+  margin: 0 0 16px;
+  padding: 7px 12px;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--cyber-black);
+  background: var(--cyber-green);
+  border: 2px solid #b8ffd3;
+  box-shadow: 4px 4px 0 var(--cyber-black), 0 0 18px var(--cyber-shadow);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.markdown-preview-view h1,
+.markdown-source-view .cm-header-1 {
+  position: relative;
+  color: #ffffff !important;
+  background:
+    linear-gradient(90deg, rgba(57, 255, 136, 0.18), rgba(62, 231, 255, 0.12), rgba(255, 79, 184, 0.14)),
+    var(--cyber-panel) !important;
+  border: 2px solid var(--cyber-green) !important;
+  border-bottom: 8px solid var(--cyber-green) !important;
+  border-radius: 0 !important;
+  padding: 20px 22px !important;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-shadow: 2px 2px 0 #00150a, 0 0 14px rgba(57, 255, 136, 0.45);
+  box-shadow:
+    0 0 0 2px var(--cyber-black),
+    7px 7px 0 rgba(0, 0, 0, 0.7),
+    0 0 24px rgba(57, 255, 136, 0.22);
+}
+
+.markdown-preview-view h1::before {
+  content: ">> ";
+  color: var(--cyber-yellow);
+}
+
+.markdown-preview-view h1::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: -8px;
+  width: 72px;
+  height: 8px;
+  background: var(--cyber-pink);
+  box-shadow: -84px 0 0 var(--cyber-cyan);
+}
+
+.markdown-preview-view h2,
+.markdown-source-view .cm-header-2 {
+  color: var(--cyber-cyan) !important;
+  border-bottom: 2px dashed var(--cyber-line) !important;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-shadow: 0 0 12px rgba(62, 231, 255, 0.38);
+}
+
+.markdown-preview-view h2::before {
+  content: "[ ";
+  color: var(--cyber-yellow);
+}
+
+.markdown-preview-view h2::after {
+  content: " ]";
+  color: var(--cyber-yellow);
+}
+
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-source-view .cm-header-3,
+.markdown-source-view .cm-header-4 {
+  color: var(--cyber-yellow) !important;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 0 var(--cyber-black);
+}
+
+.markdown-preview-view p,
+.markdown-preview-view li {
+  color: var(--cyber-ink) !important;
+  line-height: 1.65;
+}
+
+.markdown-preview-view strong {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(255, 209, 102, 0.3);
+}
+
+/* Mission text block */
+.markdown-preview-view blockquote {
+  position: relative;
+  margin: 22px 0;
+  padding: 14px 18px 14px 22px;
+  color: #fff7cf !important;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 209, 102, 0.05) 0 6px, transparent 6px 12px),
+    rgba(20, 22, 28, 0.95) !important;
+  border: 2px solid var(--cyber-yellow) !important;
+  border-left: 9px solid var(--cyber-yellow) !important;
+  border-radius: 0 !important;
+  box-shadow: 6px 6px 0 var(--cyber-black), 0 0 18px rgba(255, 209, 102, 0.18);
+}
+
+.markdown-preview-view blockquote::before {
+  content: "MISSION";
+  position: absolute;
+  top: -13px;
+  left: 14px;
+  padding: 1px 8px;
+  color: var(--cyber-black);
+  background: var(--cyber-yellow);
+  font-weight: 900;
+}
+
+/* Arcade menu links */
+.markdown-preview-view a,
+.markdown-preview-view a.internal-link,
+.cm-s-obsidian .cm-hmd-internal-link {
+  color: var(--cyber-green) !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid rgba(57, 255, 136, 0.48);
+  text-shadow: 0 0 9px rgba(57, 255, 136, 0.38);
+}
+
+.markdown-preview-view a:hover,
+.markdown-preview-view a.internal-link:hover,
+.cm-s-obsidian .cm-hmd-internal-link:hover {
+  color: var(--cyber-black) !important;
+  background: var(--cyber-green);
+  border-bottom-color: var(--cyber-yellow);
+  box-shadow: 0 0 14px rgba(57, 255, 136, 0.55);
+}
+
+/* Pixel tables */
+.markdown-preview-view table {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  margin: 18px 0 28px;
+  color: var(--cyber-ink);
+  background:
+    linear-gradient(180deg, rgba(20, 31, 52, 0.98), rgba(9, 14, 26, 0.98)) !important;
+  border: 2px solid var(--cyber-cyan) !important;
+  box-shadow: 6px 6px 0 var(--cyber-black), 0 0 20px rgba(62, 231, 255, 0.16);
+}
+
+.markdown-preview-view th {
+  background:
+    linear-gradient(90deg, rgba(62, 231, 255, 0.2), rgba(57, 255, 136, 0.12)) !important;
+  color: var(--cyber-cyan) !important;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border: 1px solid var(--cyber-line) !important;
+  padding: 10px 12px !important;
+  vertical-align: top;
+}
+
+.markdown-preview-view tr:nth-child(even) td {
+  background: rgba(62, 231, 255, 0.04);
+}
+
+.markdown-preview-view tr:hover td {
+  background: rgba(57, 255, 136, 0.09);
+}
+
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  padding-left: 1.5em;
+}
+
+.markdown-preview-view li {
+  margin: 7px 0;
+}
+
+.markdown-preview-view ul > li::marker {
+  color: var(--cyber-pink);
+}
+
+.markdown-preview-view ol > li::marker {
+  color: var(--cyber-yellow);
+  font-weight: 900;
+}
+
+/* Callouts become game HUD alert panels */
+.markdown-preview-view .callout {
+  --callout-color: 62, 231, 255;
+  position: relative;
+  overflow: hidden;
+  margin: 22px 0;
+  padding: 16px 18px;
+  color: var(--cyber-ink);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04), transparent 22%, rgba(62, 231, 255, 0.06)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 2px, transparent 2px 6px),
+    var(--cyber-panel-2) !important;
+  border: 2px solid var(--cyber-cyan) !important;
+  border-radius: 0 !important;
+  box-shadow:
+    0 0 0 2px var(--cyber-black),
+    7px 7px 0 rgba(0, 0, 0, 0.72),
+    0 0 20px rgba(62, 231, 255, 0.18);
+}
+
+.markdown-preview-view .callout::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 44px;
+  height: 8px;
+  background: var(--cyber-cyan);
+  box-shadow: -52px 0 0 var(--cyber-green), -104px 0 0 var(--cyber-pink);
+}
+
+.markdown-preview-view .callout-title {
+  color: #ffffff;
+  font-family: "Courier New", Consolas, monospace;
+  font-size: 1.04em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(62, 231, 255, 0.32);
+}
+
+.markdown-preview-view .callout-content {
+  color: var(--cyber-ink);
+}
+
+.markdown-preview-view .callout[data-callout="abstract"],
+.markdown-preview-view .callout[data-callout="info"],
+.markdown-preview-view .callout[data-callout="note"] {
+  border-color: var(--cyber-cyan) !important;
+  box-shadow: 0 0 0 2px var(--cyber-black), 7px 7px 0 rgba(0, 0, 0, 0.72), 0 0 22px rgba(62, 231, 255, 0.2);
+}
+
+.markdown-preview-view .callout[data-callout="tip"],
+.markdown-preview-view .callout[data-callout="success"],
+.markdown-preview-view .callout[data-callout="example"] {
+  border-color: var(--cyber-green) !important;
+  box-shadow: 0 0 0 2px var(--cyber-black), 7px 7px 0 rgba(0, 0, 0, 0.72), 0 0 22px rgba(57, 255, 136, 0.2);
+}
+
+.markdown-preview-view .callout[data-callout="warning"],
+.markdown-preview-view .callout[data-callout="question"] {
+  border-color: var(--cyber-yellow) !important;
+  box-shadow: 0 0 0 2px var(--cyber-black), 7px 7px 0 rgba(0, 0, 0, 0.72), 0 0 22px rgba(255, 209, 102, 0.2);
+}
+
+.markdown-preview-view .callout[data-callout="bug"],
+.markdown-preview-view .callout[data-callout="danger"],
+.markdown-preview-view .callout[data-callout="fail"] {
+  border-color: var(--cyber-red) !important;
+  box-shadow: 0 0 0 2px var(--cyber-black), 7px 7px 0 rgba(0, 0, 0, 0.72), 0 0 22px rgba(255, 54, 95, 0.22);
+}
+
+/* Code as debug console */
+.markdown-preview-view code,
+.cm-inline-code {
+  background: var(--cyber-black) !important;
+  color: var(--cyber-yellow) !important;
+  border: 1px solid var(--cyber-line);
+  border-radius: 0;
+  padding: 1px 5px;
+}
+
+.markdown-preview-view pre {
+  background: var(--cyber-black) !important;
+  border: 2px solid var(--cyber-green) !important;
+  border-radius: 0 !important;
+  box-shadow: 6px 6px 0 #000000, 0 0 18px rgba(57, 255, 136, 0.18);
+}
+
+.markdown-preview-view pre code {
+  color: var(--cyber-green) !important;
+  border: 0;
+}
+
+/* Mermaid diagram: force compact, centered, screen-safe */
+.markdown-preview-view .mermaid {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 14px;
+  background:
+    linear-gradient(180deg, rgba(7, 10, 18, 0.96), rgba(12, 16, 29, 0.96)) !important;
+  border: 2px solid var(--cyber-pink) !important;
+  border-radius: 0 !important;
+  box-shadow: 6px 6px 0 var(--cyber-black), 0 0 22px rgba(255, 79, 184, 0.2);
+}
+
+.markdown-preview-view .mermaid svg {
+  display: block;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+.markdown-preview-view .mermaid text {
+  font-family: "Courier New", Consolas, monospace !important;
+  font-size: 13px !important;
+  fill: var(--cyber-ink) !important;
+  color: var(--cyber-ink) !important;
+}
+
+.markdown-preview-view .mermaid .nodeLabel,
+.markdown-preview-view .mermaid .edgeLabel,
+.markdown-preview-view .mermaid .label,
+.markdown-preview-view .mermaid span {
+  color: var(--cyber-ink) !important;
+}
+
+.markdown-preview-view .mermaid .node rect,
+.markdown-preview-view .mermaid .node polygon,
+.markdown-preview-view .mermaid .node circle,
+.markdown-preview-view .mermaid .node ellipse {
+  fill: #101827 !important;
+  stroke: var(--cyber-green) !important;
+  stroke-width: 2px !important;
+}
+
+.markdown-preview-view .mermaid .cluster rect {
+  fill: transparent !important;
+  stroke: var(--cyber-line) !important;
+}
+
+.markdown-preview-view .mermaid .edgePath path,
+.markdown-preview-view .mermaid .flowchart-link {
+  stroke: var(--cyber-cyan) !important;
+}
+
+.markdown-preview-view .mermaid .edgeLabel {
+  background: var(--cyber-black) !important;
+}
+
+.markdown-preview-view img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  border: 3px solid var(--cyber-cyan);
+  border-radius: 0;
+  outline: 2px solid var(--cyber-black);
+  background: var(--cyber-black);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.7), 0 0 18px rgba(62, 231, 255, 0.18);
+}
+
+.markdown-preview-view p > img,
+.markdown-preview-view .image-embed {
+  margin: 20px auto;
+}
+
+.tag {
+  color: var(--cyber-ink) !important;
+  background: #0c1321 !important;
+  border: 2px solid var(--cyber-line) !important;
+  border-radius: 0 !important;
+  padding: 2px 7px !important;
+  font-family: "Courier New", Consolas, monospace;
+  font-size: 0.82em !important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.tag[href="#security"],
+.tag[href="#beginner"],
+.tag[href="#roadmap"] {
+  color: var(--cyber-green) !important;
+  border-color: var(--cyber-green) !important;
+}
+
+.tag[href="#uvt"],
+.tag[href="#local"],
+.tag[href="#university"] {
+  color: var(--cyber-cyan) !important;
+  border-color: var(--cyber-cyan) !important;
+}
+
+.tag[href="#problem"] {
+  color: var(--cyber-red) !important;
+  border-color: var(--cyber-red) !important;
+}
+
+/* File explorer and tabs */
+.nav-folder-title,
+.nav-file-title,
+.workspace-tab-header,
+.view-header-title {
+  font-family: "Courier New", Consolas, monospace;
+}
+
+.nav-folder-title {
+  color: var(--cyber-cyan) !important;
+}
+
+.nav-file-title {
+  color: var(--cyber-muted) !important;
+}
+
+.nav-file-title.is-active {
+  color: var(--cyber-green) !important;
+  background: rgba(57, 255, 136, 0.12) !important;
+  border-left: 4px solid var(--cyber-green);
+}
+
+.workspace-tab-header.is-active {
+  color: var(--cyber-green) !important;
+  background: rgba(57, 255, 136, 0.08) !important;
+}
+
+/* Graph view: cyber radar */
+.graph-view.canvas-background,
+.workspace-leaf-content[data-type="graph"] .view-content {
+  background:
+    radial-gradient(circle at center, rgba(57, 255, 136, 0.12), transparent 32%),
+    linear-gradient(90deg, rgba(62, 231, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(rgba(62, 231, 255, 0.055) 1px, transparent 1px),
+    #05070c !important;
+  background-size: auto, 34px 34px, 34px 34px, auto !important;
+}
+
+.graph-view.color-fill {
+  color: var(--cyber-green) !important;
+}
+
+.graph-view.color-text {
+  color: var(--cyber-ink) !important;
+}
+
+.graph-view.color-line {
+  color: rgba(62, 231, 255, 0.35) !important;
+}
+
+.graph-view.color-fill-tag {
+  color: var(--cyber-pink) !important;
+}
+
+.graph-view.color-fill-focused {
+  color: var(--cyber-yellow) !important;
+}
+
+.graph-view.color-line-highlight {
+  color: rgba(255, 209, 102, 0.78) !important;
+}
+
+.graph-view.color-fill-unresolved {
+  color: #5b667a !important;
+}
+
+.graph-view text {
+  font-family: "Courier New", Consolas, monospace !important;
+  fill: var(--cyber-ink) !important;
+}
+
+.graph-view circle {
+  filter: drop-shadow(0 0 5px rgba(57, 255, 136, 0.42));
+}
+
+/* Small polish */
+.markdown-preview-view hr {
+  border: 0;
+  border-top: 3px dashed var(--cyber-line);
+  box-shadow: 0 1px 0 rgba(62, 231, 255, 0.2);
+  margin: 28px 0;
+}
+
+::selection {
+  color: var(--cyber-black);
+  background: var(--cyber-pink);
+}
+
+@media (max-width: 720px) {
+  .markdown-preview-section {
+    padding: 12px;
+  }
+
+  .markdown-preview-view h1,
+  .markdown-source-view .cm-header-1 {
+    padding: 14px 15px !important;
+    font-size: 1.55em;
+  }
+
+  .markdown-preview-view th,
+  .markdown-preview-view td {
+    padding: 8px 9px !important;
+  }
+}
+/* Animated Scanline Glitch Accent for Custom Header HUDs */
+.markdown-preview-view h1::before {
+  content: "» ";
+  color: var(--cyber-green);
+  animation: hud-pulse 1.5s infinite steps(2);
+}
+
+@keyframes hud-pulse {
+  0% { opacity: 0.3; text-shadow: 0 0 2px var(--cyber-green); }
+  50% { opacity: 1; text-shadow: 0 0 8px var(--cyber-green); }
+  100% { opacity: 0.3; text-shadow: 0 0 2px var(--cyber-green); }
+}
+
+.markdown-preview-view table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--cyber-line) !important;
+  margin: 20px 0 !important;
+  background: rgba(11, 16, 32, 0.6) !important;
+}
+
+.markdown-preview-view th {
+  background: var(--cyber-panel-2) !important;
+  color: var(--cyber-cyan) !important;
+  font-weight: 700;
+  border-bottom: 2px solid var(--cyber-cyan) !important;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: 10px 14px !important;
+}
+
+.markdown-preview-view td {
+  border-bottom: 1px solid rgba(40, 65, 91, 0.5) !important;
+  padding: 10px 14px !important;
+}

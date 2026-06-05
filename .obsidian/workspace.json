@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "8dae339b0bbeeaa8",
+    "type": "split",
+    "children": [
+      {
+        "id": "deebca0eec15af9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5ebbb930e1cd2e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_Domains/01_Application_Software_Security/Application_Software_Security_Map.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Application_Software_Security_Map"
+            }
+          },
+          {
+            "id": "89733fa2aa628d51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_Domains/04_Security_Operations_Threat_Intelligence/Malware_Analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Malware_Analysis"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a87989aab9c6d33b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9716c61bc4ebe71",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1baa60e08cb0ead1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6905be2462b49be8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7869e192acefd3e8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 365.5
+  },
+  "right": {
+    "id": "99c8bd53f6e6cafe",
+    "type": "split",
+    "children": [
+      {
+        "id": "c971eaf81a39606d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9040a1520666f778",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01_Domains/01_Application_Software_Security/Web_API_Security.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Web_API_Security"
+            }
+          },
+          {
+            "id": "613c5157b04ba084",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01_Domains/01_Application_Software_Security/Web_API_Security.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Web_API_Security"
+            }
+          },
+          {
+            "id": "69f57d3754bfc9f7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7409479a452c4da7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1237ddbe22960227",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_Domains/01_Application_Software_Security/Web_API_Security.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Web_API_Security"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "webpage-html-export:Export as HTML": false
+    }
+  },
+  "active": "c5ebbb930e1cd2e9",
+  "lastOpenFiles": [
+    "New Text Document.txt",
+    "01_Domains/03_Cryptography/Post_Quantum_Privacy_Crypto.md",
+    "01_Domains/01_Application_Software_Security/Application_Software_Security_Map.md",
+    "01_Domains/04_Security_Operations_Threat_Intelligence/Incident_Response_Forensics.md",
+    "01_Domains/03_Cryptography/Protocols_Applied_Crypto.md",
+    "01_Domains/01_Application_Software_Security/DevSecOps_Supply_Chain_Security.md",
+    "01_Domains/01_Application_Software_Security/Mobile_Client_Security.md",
+    "01_Domains/02_Systems_Infrastructure_Security/Systems_Infrastructure_Security_Map.md",
+    "01_Domains/03_Cryptography/Public_Key_Crypto_PKI.md",
+    "03_Directory/Person_Paul_Valase.md",
+    "03_Directory/Person_Cristian_Cira.md",
+    "01_Domains/05_Governance_Risk_Human_Security/Governance_Risk_Human_Security_Map.md",
+    "01_Domains/02_Systems_Infrastructure_Security/Cloud_Container_Security.md",
+    "00_Cyber_Map_Main/Cybersecurity_Master_Map.md",
+    "01_Domains/03_Cryptography/Symmetric_Crypto_Hashing.md",
+    "01_Domains/02_Systems_Infrastructure_Security/Network_Security.md",
+    "01_Domains/02_Systems_Infrastructure_Security/Memory_Binary_Security.md",
+    "03_Directory/Venue_ZeroDayTM.md",
+    "03_Directory/Venue_SYNASC.md",
+    "03_Directory/Person_Prof_Daniela_Zaharie.md",
+    "03_Directory/Person_Prof_Dana_Petcu.md",
+    "03_Directory/Person_Dumitru_Penteliuc.md",
+    "03_Directory/Person_Dr_Gabriel_Istrate.md",
+    "03_Directory/Person_Dr_Florin_Spataru.md",
+    "03_Directory/Person_Dr_Daniela_Zaharie.md",
+    "03_Directory/Person_Dr_Ciprian_Pungila.md",
+    "01_Domains/05_Governance_Risk_Human_Security",
+    "01_Domains/04_Security_Operations_Threat_Intelligence",
+    "01_Domains/03_Cryptography",
+    "01_Domains/02_Systems_Infrastructure_Security",
+    "01_Domains/01_Application_Software_Security",
+    "04_Local_UVT",
+    "03_Directory",
+    "02_Problems",
+    "Untitled.base",
+    "01_Domains"
+  ]
+}

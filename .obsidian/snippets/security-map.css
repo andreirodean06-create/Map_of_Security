@@ -1,0 +1,100 @@
+/* Security map visual theme for Obsidian notes using cssclasses: security-map */
+.security-map.markdown-preview-view,
+.security-map.markdown-source-view {
+  --security-bg: #f7f8f5;
+  --security-ink: #18201c;
+  --security-muted: #59635d;
+  --security-panel: #ffffff;
+  --security-border: #d8ded6;
+  --security-accent: #0f766e;
+  --security-accent-2: #b45309;
+  --security-accent-3: #374151;
+  background: var(--security-bg);
+  color: var(--security-ink);
+}
+
+.security-map .markdown-preview-section {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.security-map h1 {
+  padding: 22px 24px;
+  border: 1px solid var(--security-border);
+  border-left: 7px solid var(--security-accent);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff 0%, #eef7f4 100%);
+  color: var(--security-ink);
+}
+
+.security-map h2 {
+  margin-top: 34px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--security-border);
+  color: var(--security-accent-3);
+}
+
+.security-map h3 {
+  color: var(--security-accent);
+}
+
+.security-map blockquote {
+  border-left: 5px solid var(--security-accent-2);
+  background: #fff7ed;
+  color: #3f2a12;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+.security-map table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 24px;
+  background: var(--security-panel);
+  border: 1px solid var(--security-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.security-map th {
+  background: #e7f1ee;
+  color: #102724;
+  text-align: left;
+}
+
+.security-map th,
+.security-map td {
+  border: 1px solid var(--security-border);
+  padding: 10px 12px;
+  vertical-align: top;
+}
+
+.security-map ul,
+.security-map ol {
+  padding-left: 1.4em;
+}
+
+.security-map li {
+  margin: 6px 0;
+}
+
+.security-map a.internal-link {
+  color: var(--security-accent);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.security-map code {
+  background: #eef1ec;
+  color: #7c2d12;
+  border: 1px solid #dfe5dc;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.security-map .mermaid {
+  background: #ffffff;
+  border: 1px solid var(--security-border);
+  border-radius: 8px;
+  padding: 14px;
+}
